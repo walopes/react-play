@@ -10,8 +10,9 @@ function MyInfo()
         <div>
             <Header />
             <MainContent />
+            {/* Only apply className to react components, and not with react elements */}
             <main>
-                <p>This is where the content will go</p>
+                <p className="teste">This is where the content will go</p>
             </main>
             <Footer />
         </div>
