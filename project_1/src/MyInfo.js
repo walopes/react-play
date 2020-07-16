@@ -6,12 +6,15 @@ import MainContent from './MainContent'
 
 function MyInfo()
 {
+    const name = "Will";
+    const surname = "Lopes";
     return (
         <div>
             <Header />
             <MainContent />
             {/* Only apply className to react components, and not with react elements */}
             <main>
+    <h1>Hello there, {name + " " + surname}</h1>
                 <p className="teste">This is where the content will go</p>
             </main>
             <Footer />
