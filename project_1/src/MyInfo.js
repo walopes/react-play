@@ -8,14 +8,16 @@ function MyInfo()
 {
     const name = "Will";
     const surname = "Lopes";
+    const date = new Date();
+    const hours = date.getHours();
     return (
         <div>
             <Header />
             <MainContent />
             {/* Only apply className to react components, and not with react elements */}
             <main>
-    <h1>Hello there, {name + " " + surname}</h1>
-                <p className="teste">This is where the content will go</p>
+                <h1>Hello there, {name + " " + surname}</h1>
+    <p className="teste">Hour now is: {hours} </p>
             </main>
             <Footer />
         </div>
