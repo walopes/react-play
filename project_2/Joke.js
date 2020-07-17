@@ -5,7 +5,7 @@ function Joke(props){
     return (
         <div>
             <p className="question">{props.props.question}</p>
-            <p className="punchLine" >{props.props.punchLine}</p>
+            <p style={{display: !props.props.question && "none"}} className="punchLine" >{props.props.punchLine}</p>
         </div>
     )
 }
